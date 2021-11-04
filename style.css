@@ -1,0 +1,586 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+}
+.btn {
+  border: none;
+  width: 250px;
+  height: 65px;
+  background: #222222;
+}
+.h2 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #333333;
+}
+.nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+}
+.nav .top {
+  display: flex;
+}
+#navToggle {
+  display: none;
+}
+.navlist {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  text-transform: uppercase;
+}
+.navlist li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+}
+.hero {
+  height: 900px;
+  padding: 0 120px;
+  background-image: url("./assets/hero.png");
+}
+
+.hero-content h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 128px;
+  color: #333333;
+  margin: 96px 0 65px 0;
+  width: 500px;
+}
+
+.hero-content button {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #e0e0e0;
+}
+.filter {
+  width: fit-content;
+  display: flex;
+  gap: 40px;
+  background-color: #222;
+  padding-left: 120px;
+  margin: -60px auto 0 auto;
+  box-shadow: 0px 4px 25px 1px #e0e0e0;
+}
+.filter .inputs {
+  gap: 90px;
+  padding: 30px 0;
+  display: flex;
+}
+.filter-input {
+  display: flex;
+  flex-direction: column;
+}
+.filter-input label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #c4c4c4;
+  margin-bottom: 10px;
+}
+.filter-input select {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.filter .search {
+  background-color: #fff;
+  /* height: 100%; */
+  width: 180px;
+  display: grid;
+  place-items: center;
+}
+.about {
+  margin-top: 130px;
+  display: flex;
+  padding-left: 40px;
+}
+.about .text {
+  padding: 0 50px;
+}
+.about .text p {
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin: 50px 0 100px 0;
+}
+.about .text button {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #e0e0e0;
+}
+.houses {
+  margin: 300px 0;
+  padding: 0 0 0 120px;
+  position: relative;
+}
+.houses .next {
+  position: absolute;
+  right: 40px;
+  top: 40%;
+}
+.slide {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+.card {
+  flex: 0 0 410px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background: #eeeeee;
+}
+.card .body {
+  padding: 13px 25px 15px 25px;
+}
+.card .img {
+  width: 100%;
+  height: 378px;
+}
+.card .img img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+}
+.card .price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+  margin-left: auto;
+}
+.card .amenities {
+  width: 123px;
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+.card .amenities > div {
+  display: flex;
+}
+.card .amenities p {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+.card .loc h4 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #000000;
+}
+.card .loc p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+}
+.hiw {
+  padding: 0 60px;
+}
+.hiw .cards {
+  margin: 125px 0 165px 0;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.hiw .cards .card {
+  background: #fdf9f9;
+  box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex: 0 0 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hiw .cards .card .icon {
+  background: #fdf9f9;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 70px;
+}
+.hiw .cards .card h5 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  margin: 30px 0;
+  /* identical to box height */
+
+  text-align: center;
+}
+.hiw .cards .card p {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  width: 250px;
+  margin-bottom: 90px;
+}
+.hiw .cards .card:nth-last-of-type(2) {
+  background-color: #222222;
+  color: #fdf9f9;
+}
+.why .content {
+  display: flex;
+  padding: 0 60px;
+  margin: 100px 0 0 0;
+}
+.why {
+  margin-bottom: 120px;
+}
+.why .vid {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.why .vid .img {
+  width: 100%;
+}
+.why .vid .play {
+  position: absolute;
+  z-index: 10;
+}
+.stacks {
+  flex: 0 0 45%;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.stack {
+  padding: 27px 60px 17px 60px;
+  background: rgba(253, 249, 249, 0.77);
+  border: 1px solid #999292;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 5px 4px rgba(238, 238, 238, 0.8);
+}
+.stack:nth-of-type(2) {
+  background-color: #222222;
+}
+.stack:nth-of-type(2) .txt :is(h5, p) {
+  color: #fdf9f9;
+}
+.stack .txt {
+  width: 245px;
+  margin-left: auto;
+  color: #222222;
+}
+.stack .txt h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 14px;
+}
+.stack .txt p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.testimonials .content {
+  background-color: #333333;
+  padding: 100px 140px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 85px;
+}
+.testi {
+  width: 350px;
+  padding: 18px 25px;
+  background-color: #999;
+  border-radius: 5px;
+}
+.testi .top {
+  display: flex;
+  justify-content: space-between;
+}
+.testi .txt {
+  margin: 10px 0 45px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.testi .auth {
+  color: #5c5c5c;
+}
+.testi .auth .name {
+  font-size: 16px;
+  line-height: 105.47%;
+}
+.testi .auth .job {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 105.47%;
+}
+.testi:nth-of-type(2) {
+  background-color: #fff;
+}
+.testi:nth-of-type(2) .txt {
+  margin: 10px 0 45px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.footer {
+  padding: 100px 120px 0 120px;
+  display: flex;
+  background-color: #232323;
+  color: #ffffff;
+  gap: 170px;
+}
+.footer .fbrand {
+  margin-bottom: 15px;
+}
+.footer .brandt {
+  width: 35ch;
+  font-size: 11px;
+  line-height: 175.78%;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer li {
+  font-size: 14px;
+}
+.footer h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 175.78%;
+  /* or 26px */
+}
+.socials {
+  padding: 40px 120px 20px 120px;
+  background-color: #232323;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.btm {
+  padding: 16px 100px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+
+  background-color: #000000;
+  color: #ffffff;
+}
+.btm span {
+  color: #ffc000;
+}
+
+@media screen and (max-width: 768px) {
+  .h2 {
+    font-size: 46px;
+  }
+  #navToggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .nav {
+    flex-direction: column;
+    position: relative;
+  }
+  .nav .top {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navlist {
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    gap: 20px;
+    display: none;
+  }
+  .navlist li {
+    color: #fdf9f9;
+  }
+  .hero {
+    padding: 0 20px;
+  }
+  .hero-content h1 {
+    font-size: 75px;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-content button {
+    display: block;
+    margin: 0 auto;
+  }
+  .filter {
+    padding-left: 0;
+    width: 300px;
+    flex-direction: column;
+    margin-top: -200px;
+  }
+  .filter .inputs {
+    flex-direction: column;
+    gap: 0;
+  }
+  .filter-input {
+    padding: 20px;
+  }
+  .filter-input label {
+    font-size: 16px;
+  }
+  .filter-input select {
+    font-size: 18px;
+  }
+  .filter .search {
+    width: 100%;
+    height: 100px;
+    order: -1;
+  }
+  .about {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .about .image img {
+    width: 100%;
+  }
+  .about .text {
+    padding: 0 20px;
+  }
+  .about .text p {
+    font-size: 18px;
+    margin: 20px 0 50px 0;
+  }
+  .about .text button {
+    display: block;
+    margin: 0 auto;
+  }
+  .houses {
+    margin: 200px 0 150px 0;
+    padding: 0 0 0 20px;
+    position: relative;
+  }
+  .card {
+    flex: 0 0 300px;
+  }
+  .card .img {
+    width: 100%;
+    height: 250px;
+  }
+  .slide {
+    display: flex;
+    gap: 30px;
+  }
+  .hiw {
+    padding: 0 20px;
+  }
+  .hiw .cards {
+    margin: 60px 0 165px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hiw .cards .card {
+    width: 80%;
+  }
+  .why .content {
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 60px 0 0 0;
+  }
+  .stacks {
+    margin-top: 40px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .stack .txt h5 {
+    font-size: 18px;
+  }
+  .stack .txt p {
+    font-size: 16px;
+  }
+  .stack .txt {
+    margin-left: 0;
+    width: auto;
+  }
+  .testimonials .content {
+    padding: 100px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testi {
+    width: 80%;
+  }
+  .footer {
+    padding: 60px 40px 0 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer .brandt {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .footer li {
+    font-size: 15px;
+  }
+  .footer h5 {
+    margin-top: 0px;
+    font-size: 17px;
+  }
+  .socials {
+    padding: 40px 120px 20px 120px;
+  }
+}
